@@ -1,65 +1,104 @@
 import Image from "next/image";
+import DeveloperCard from "./components/right";
+import OutlineButton from "./components/buttons/outlinebtn";
+import PrimaryButton from "./components/buttons/btnprim";
+
+import Card from "./components/Card";
+import CardB from "./components/Cardforbackend";
+import CardM from "./components/cardmobile";
+import CardSlider from "./components/slider";
+import LoginBackground from "./components/Login";
+import Socials from "./components/Socials";
+import Header from "./components/Header";
+
 
 export default function Home() {
+  const developer = {
+    name: "You",
+    skills: ["React", "Node.js", "Flutter", "SQL"],
+    ready: true
+  };
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="all">
+      <div className="container">
+
+      <Header/>
+       <main>
+       
+        
+        <nav>
+          
+<div className="between flex justify-between">
+  <div className="left flex flex-col ">
+    <div className="widther ">
+    <h1 className="font-bold text-4xl ">Become a <span className="textss">professional</span> developer</h1>
+    <p className="text-#e8edf5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quaerat tempora quia mollitia facilis, fuga sapiente perspiciatis consectetur doloremque iure quod q.</p>
+  <span className="flex wrap-anywhere gap-3"> <PrimaryButton/>
+  <OutlineButton/>
+    </span> 
+    </div>
+  </div>
+  <div className="right">
+      <DeveloperCard developer={developer}  />
+  </div>
+</div>
+        </nav>
+        <div className="center flex justify-center align-middle mt-8">
+         <h1 className="font-bold text-4xl text-center "> About our <span className="textss">courses</span> </h1>
+         </div>
+        <section className="section">
+           
+          <Card/>
+          <CardB/>
+          <CardM/>
+        </section>
+<section id="hallo mt-8">
+   <div className="center flex justify-center align-middle flex-col mt-8">
+         <h1 className="font-bold text-4xl text-center ">  Why <span className="textss">IT ACADEMY</span> <span className="text-blue-50">?</span></h1>
+          <p className="text-gray-400 text-center">We dont just teach,we educate-truly,freely and independently.</p>
+         </div>
+<CardSlider/>
+</section>
+       </main>
+<section className="login-ui tile">
+<LoginBackground/>
+</section>
+<footer className="bg-[#060a10] w-full font-medium flex flex-col wrap-anywhere">
+  <div className="between flex justify-between align-middle">
+    <div className="sociallar">
+      <div className="text smth text-white text-3xl font-bold flex flex-row"><h1>It</h1> <p className="text-[#00e5ff]">Academy</p></div> <br />
+      <p className="text-gray-400"></p><br />
+      <span className="">
+        <Socials/>
+      </span>
+    </div>
+    <div className="kurslar text-gray-400 font-medium flex gap-2 flex-col">
+      <h1 className="text-gray-400 font-bold">Courses:</h1> <br />
+      <p>frontend</p>
+      <p>Backend</p>
+      <p>flutter</p>
+      <p>App dev</p>
+    </div>
+    <div className="about flex gap-2 flex-col">
+      <a href="#" className="forcolor text-gray-400">About</a><br />
+      <a href="#">Contact</a><a href="#">Privacy</a><a href="#">CEO</a><a href="#">About Us</a>
+    </div>
+    <div className="qushimcha flex gap-2 flex-col">
+      <h1 className="text-gray-400">More</h1> <br />
+      <p>nomer</p>
+      <p>email</p>
+      <p>Contact</p>
+    </div>
+  </div>
+  <div className="between">
+    <div className="text">© 2025 IT Academy. All rights reserved.</div>
+     <div className="love">
+      made with love
+     </div>
+  </div>
+</footer>
+    </div>
     </div>
   );
 }
+

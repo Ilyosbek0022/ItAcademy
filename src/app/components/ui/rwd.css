@@ -1,0 +1,2620 @@
+/* ============================================
+   RESPONSIVE WEB DESIGN (RWD) - LANDING PAGE
+   Barcha komponentlar uchun moslashuvchanlik
+   ============================================ */
+
+/* ------------------------------
+   GLOBAL SETTINGS
+   ------------------------------ */
+
+/* Extra large devices (1400px dan katta) */
+@media screen and (max-width: 1400px) {
+  .container {
+    width: calc(100% - 161px);
+  }
+}
+
+/* Large devices (1200px gacha) */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc(100% - 100px);
+  }
+  
+  /* Header */
+  header {
+    padding: 15px 20px !important;
+  }
+  
+  /* Hero section */
+  .left h1 {
+    font-size: 54px !important;
+  }
+  
+  .widther {
+    width: 80%;
+  }
+  
+  .code-window.nonwidther {
+    width: 350px;
+  }
+}
+
+/* Medium devices (992px gacha) */
+@media screen and (max-width: 992px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+    padding: 15px !important;
+  }
+  
+  header .links {
+    gap: 15px !important;
+  }
+  
+  header .links a {
+    font-size: 14px;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  nav {
+    margin-top: 80px !important;
+  }
+  
+  nav .between {
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .left {
+    width: 100%;
+  }
+  
+  .widther {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .left h1 {
+    font-size: 48px !important;
+    text-align: center;
+  }
+  
+  .left p {
+    text-align: center;
+  }
+  
+  .wrap-anywhere {
+    justify-content: center;
+  }
+  
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .code-window.nonwidther {
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .hero-visual {
+    display: block !important;
+  }
+  
+  /* ===== CARDS SECTION ===== */
+  .section {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .section > div {
+    width: calc(50% - 15px);
+    min-width: 280px;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer .between:first-child {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around !important;
+  }
+  
+  .sociallar {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sociallar .text {
+    justify-content: center;
+  }
+  
+  .kurslar, .about, .qushimcha {
+    width: calc(33.33% - 20px);
+    min-width: 150px;
+  }
+  
+  /* ===== LOGIN SECTION ===== */
+  .login-ui .login-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+  
+  .login-ui .login-brand {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .login-ui .login-form-wrap {
+    width: 100%;
+    max-width: 550px;
+  }
+  
+  .login-ui .brand-title {
+    font-size: 48px !important;
+  }
+}
+
+/* Small devices (768px gacha) */
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  
+  body {
+    font-size: 14px;
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 15px;
+    padding: 15px !important;
+  }
+  
+  header .links {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 15px !important;
+  }
+  
+  header .sign {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header .sign button {
+    width: auto;
+    min-width: 150px;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  .left h1 {
+    font-size: 42px !important;
+  }
+  
+  nav {
+    margin-top: 100px !important;
+  }
+  
+  .wrap-anywhere {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px !important;
+  }
+  
+  .wrap-anywhere button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* ===== CARDS SECTION ===== */
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section > div {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .windcode {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Section title */
+  .center h1 {
+    font-size: 36px !important;
+  }
+  
+  /* ===== SLIDER ===== */
+  .card-wrapper {
+    margin: 0 15px 25px !important;
+    padding: 10px 0;
+  }
+  
+  .card-item {
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .card-link {
+    height: auto;
+    min-height: 600px;
+    padding: 15px;
+  }
+  
+  .badge {
+    font-size: 24px !important;
+  }
+  
+  .card-title {
+    font-size: 14px !important;
+    line-height: 1.5;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* ===== LOGIN SECTION - MUHIM QISM ===== */
+  .login-ui {
+    min-height: auto;
+    padding: 40px 0;
+  }
+  
+  .login-ui .login-container {
+    gap: 20px;
+    min-height: auto;
+    padding: 20px;
+  }
+  
+  .login-ui .login-brand {
+    margin-bottom: 10px;
+  }
+  
+  .login-ui .brand-title {
+    font-size: 42px !important;
+  }
+  
+  .login-ui .brand-title span {
+    display: inline-block;
+  }
+  
+  .login-ui .brand-text {
+    font-size: 16px;
+  }
+  
+  .login-ui .login-form-wrap {
+    padding: 25px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .login-ui .window-bar {
+    padding: 10px 15px;
+  }
+  
+  .login-ui .form-header {
+    margin-top: 20px;
+  }
+  
+  .login-ui .form-header h2 {
+    font-size: 28px;
+  }
+  
+  .login-ui .form-header p {
+    font-size: 14px;
+  }
+  
+  .login-ui .input-field {
+    margin-top: 20px;
+  }
+  
+  .login-ui .input-field input {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .login-ui .input-field label {
+    font-size: 11px;
+    top: -8px;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .form-extras {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .checkbox {
+    font-size: 13px;
+  }
+  
+  .forgot-link {
+    font-size: 13px;
+  }
+  
+  .login-ui .login-btn {
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .social-buttons {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .login-ui .social-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer .between:first-child {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .kurslar, .about, .qushimcha {
+    width: 100%;
+    align-items: center;
+  }
+  
+  .kurslar p, 
+  .about a, 
+  .qushimcha p {
+    text-align: center;
+  }
+  
+  footer .between:last-child {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  footer .between:last-child div {
+    width: 100%;
+  }
+  
+  .love {
+    margin-top: 5px;
+  }
+}
+
+/* Extra small devices (576px gacha) */
+@media screen and (max-width: 576px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+  
+  h1, .text-4xl {
+    font-size: 32px !important;
+  }
+  
+  /* ===== HEADER ===== */
+  header .links {
+    gap: 8px 12px !important;
+  }
+  
+  header .links a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+  
+  header .sign button {
+    min-width: 130px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  .left h1 {
+    font-size: 36px !important;
+  }
+  
+  .left p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 5px;
+  }
+  
+  .code-window.nonwidther {
+    max-width: 100%;
+  }
+  
+  .code-body {
+    padding: 20px;
+    font-size: 12px;
+  }
+  
+  /* ===== CARDS ===== */
+  .section > div {
+    max-width: 350px;
+  }
+  
+  .windcode {
+    max-width: 350px;
+  }
+  
+  /* Section titles */
+  .center h1 {
+    font-size: 32px !important;
+  }
+  
+  /* ===== SLIDER ===== */
+  .card-item {
+    min-height: 550px;
+  }
+  
+  .card-link {
+    min-height: 550px;
+  }
+  
+  .badge {
+    font-size: 22px !important;
+    margin: 12px 0 15px;
+    padding: 6px 12px;
+  }
+  
+  .card-title {
+    font-size: 13px !important;
+    margin-bottom: 10px;
+  }
+  
+  .card-image {
+    aspect-ratio: 16/9;
+  }
+  
+  .card-button {
+    width: 32px;
+    height: 32px;
+    margin: 20px 0 0;
+  }
+  
+  /* ===== LOGIN SECTION - SMARTPHONE UCHUN MAXSUS ===== */
+  .login-ui .login-container {
+    padding: 15px 10px;
+  }
+  
+  .login-ui .brand-title {
+    font-size: 36px !important;
+  }
+  
+  .login-ui .brand-text {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .brand-dots {
+    margin-top: 15px;
+  }
+  
+  .brand-dots .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+  }
+  
+  .login-ui .login-form-wrap {
+    padding: 20px 15px;
+    border-radius: 12px;
+  }
+  
+  .login-ui .window-bar {
+    padding: 8px 12px;
+    margin-bottom: 15px !important;
+  }
+  
+  .win-dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .win-title {
+    font-size: 10px;
+  }
+  
+  .login-ui .form-header {
+    margin-top: 10px;
+  }
+  
+  .login-ui .form-header h2 {
+    font-size: 24px;
+  }
+  
+  .login-ui .form-header p {
+    font-size: 13px;
+  }
+  
+  .login-ui .input-field {
+    margin-top: 18px;
+  }
+  
+  .login-ui .input-field input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .login-ui .input-field label {
+    font-size: 10px;
+    padding: 0 4px;
+  }
+  
+  .form-group {
+    margin-top: 15px;
+  }
+  
+  .form-group label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group textarea {
+    min-height: 90px;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .form-extras {
+    margin-top: 10px;
+  }
+  
+  .checkbox {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .checkbox input {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .forgot-link {
+    font-size: 12px;
+  }
+  
+  .login-ui .login-btn {
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+  }
+  
+  .social-buttons {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  
+  .login-ui .social-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer {
+    padding: 40px 20px 20px !important;
+  }
+  
+  .sociallar .text h1, 
+  .sociallar .text p {
+    font-size: 26px !important;
+  }
+  
+  .example-1 .icon-content {
+    margin: 0 5px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .example-1 .icon-content .link svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 18px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 13px;
+  }
+  
+  footer .between:last-child {
+    font-size: 12px;
+  }
+}
+
+/* Very small devices (400px gacha) */
+@media screen and (max-width: 400px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+  
+  /* ===== HEADER ===== */
+  header .logo {
+    font-size: 26px !important;
+  }
+  
+  header .links {
+    gap: 5px 8px !important;
+  }
+  
+  header .links a {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  
+  header .sign button {
+    min-width: 120px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  /* ===== HERO ===== */
+  .left h1 {
+    font-size: 32px !important;
+  }
+  
+  .left p {
+    font-size: 13px;
+  }
+  
+  .wrap-anywhere button {
+    max-width: 250px;
+  }
+  
+  /* ===== CARDS ===== */
+  .section > div {
+    max-width: 300px;
+  }
+  
+  .windcode {
+    max-width: 300px;
+  }
+  
+  .code-body {
+    padding: 15px;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  
+  /* ===== SLIDER ===== */
+  .badge {
+    font-size: 20px !important;
+  }
+  
+  .card-title {
+    font-size: 12px !important;
+  }
+  
+  /* ===== LOGIN SECTION - ENG KICHIK EKRANLAR ===== */
+  .login-ui .brand-title {
+    font-size: 32px !important;
+  }
+  
+  .login-ui .brand-text {
+    font-size: 13px;
+  }
+  
+  .login-ui .login-form-wrap {
+    padding: 15px 12px;
+  }
+  
+  .login-ui .form-header h2 {
+    font-size: 22px;
+  }
+  
+  .login-ui .form-header p {
+    font-size: 12px;
+  }
+  
+  .login-ui .input-field input {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  
+  .form-group textarea {
+    min-height: 80px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  
+  .checkbox {
+    font-size: 11px;
+  }
+  
+  .checkbox input {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .forgot-link {
+    font-size: 11px;
+  }
+  
+  .login-ui .login-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .login-ui .social-btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer .between:last-child {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 11px;
+  }
+  
+  .example-1 .icon-content {
+    margin: 0 3px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .example-1 .icon-content .link svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Extra small height uchun */
+@media screen and (max-height: 700px) and (max-width: 768px) {
+  .login-ui {
+    min-height: auto;
+    padding: 30px 0;
+  }
+  
+  .login-ui .login-container {
+    min-height: auto;
+  }
+  
+  .login-ui .login-brand {
+    margin-bottom: 10px;
+  }
+  
+  .login-ui .login-form-wrap {
+    padding: 20px;
+  }
+}
+
+/* ------------------------------
+   UTILITY CLASSES
+   ------------------------------ */
+
+@media screen and (max-width: 768px) {
+  .mt-8 {
+    margin-top: 30px !important;
+  }
+  
+  .gap-3 {
+    gap: 10px !important;
+  }
+  
+  .text-center-mobile {
+    text-align: center;
+  }
+  
+  .w-full-mobile {
+    width: 100%;
+  }
+  
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  .show-on-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-center-xs {
+    text-align: center;
+  }
+  
+  .mt-4-xs {
+    margin-top: 20px !important;
+  }
+  
+  .mb-4-xs {
+    margin-bottom: 20px !important;
+  }
+  
+  .px-2-xs {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+/* ============================================
+   FOOTER RESPONSIVE STYLES - WRAP BILAN
+   ============================================ */
+
+/* Footer asosiy stillari */
+footer {
+  background: #060a10;
+  width: 100%;
+  font-family: MyFont, sans-serif;
+  padding: 60px 0 30px;
+  margin-top: 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+footer .between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;  /* WRAP - elementlar o'raladi */
+  gap: 40px;        /* Oraliq masofa */
+}
+
+/* ------------------------------
+   LARGE DEVICES (1200px gacha)
+   ------------------------------ */
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 50px 0 25px;
+  }
+  
+  footer .between:first-child {
+    gap: 35px;
+  }
+  
+  .sociallar {
+    width: 100%;  /* To'liq en */
+  }
+  
+  .kurslar, .about, .qushimcha {
+    width: calc(33.33% - 25px);  /* 3 kolonka */
+    min-width: 180px;
+  }
+}
+
+/* ------------------------------
+   MEDIUM DEVICES (992px gacha)
+   ------------------------------ */
+@media screen and (max-width: 992px) {
+  footer {
+    margin-top: 80px;
+  }
+  
+  footer .between:first-child {
+    gap: 30px;
+    justify-content: flex-start;  /* Chapdan boshlab */
+  }
+  
+  .sociallar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sociallar .text {
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  .kurslar, .about, .qushimcha {
+    width: calc(33.33% - 20px);
+    min-width: 160px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 18px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 14px;
+  }
+  
+  /* Bottom footer */
+  footer .between:last-child {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+}
+
+/* ------------------------------
+   SMALL DEVICES (768px gacha)
+   ------------------------------ */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 40px 0 20px;
+    margin-top: 60px;
+  }
+  
+  footer .between:first-child {
+    gap: 30px;
+    justify-content: center;  /* Markazga */
+  }
+  
+  /* Social section */
+  .sociallar {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sociallar .text {
+    font-size: 28px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  
+  .sociallar .text h1,
+  .sociallar .text p {
+    display: inline-block;
+  }
+  
+  /* Social icons */
+  .example-1 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .example-1 .icon-content {
+    margin: 0 8px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 45px;
+    height: 45px;
+  }
+  
+  /* Footer columns - WRAP ishlaydi */
+  .kurslar, .about, .qushimcha {
+    width: calc(50% - 20px);  /* 2 kolonka */
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #00e5ff;
+  }
+  
+  .about a:first-child {
+    color: #00e5ff;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #99a1af;
+  }
+  
+  .about a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .about br {
+    display: none;  /* <br> larni yashiramiz */
+  }
+  
+  /* Bottom footer */
+  footer .between:last-child {
+    flex-direction: row;  /* Yonma-yon */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  footer .between:last-child div {
+    width: auto;  /* Avtomatik en */
+  }
+  
+  .love {
+    color: #00e5ff;
+  }
+}
+
+/* ------------------------------
+   EXTRA SMALL DEVICES (576px gacha)
+   ------------------------------ */
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 30px 0 15px;
+  }
+  
+  footer .between:first-child {
+    gap: 25px;
+  }
+  
+  .sociallar .text {
+    font-size: 26px;
+  }
+  
+  /* Social icons */
+  .example-1 .icon-content {
+    margin: 0 5px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .example-1 .icon-content .link svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  /* Footer columns - 2 ta yoki 1 ta */
+  .kurslar, .about, .qushimcha {
+    width: calc(50% - 15px);  /* 2 kolonka */
+    min-width: 150px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 17px;
+  }
+  
+  .about a:first-child {
+    font-size: 17px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 13px;
+    margin: 6px 0;
+  }
+  
+  /* Bottom footer */
+  footer .between:last-child {
+    font-size: 12px;
+    gap: 10px;
+  }
+}
+
+/* ------------------------------
+   VERY SMALL DEVICES (480px gacha)
+   ------------------------------ */
+@media screen and (max-width: 480px) {
+  footer .between:first-child {
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Footer columns - 1 ta kolonka */
+  .kurslar, .about, .qushimcha {
+    width: 100%;  /* To'liq en - 1 kolonka */
+    max-width: 280px;
+    text-align: center;
+  }
+  
+  .sociallar .text {
+    font-size: 24px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .about a:first-child {
+    font-size: 18px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  /* Bottom footer */
+  footer .between:last-child {
+    flex-direction: column;  /* Vertikal */
+    gap: 8px;
+    font-size: 12px;
+  }
+}
+
+/* ------------------------------
+   VERY VERY SMALL DEVICES (400px gacha)
+   ------------------------------ */
+@media screen and (max-width: 400px) {
+  footer {
+    padding: 25px 0 15px;
+  }
+  
+  .sociallar .text {
+    font-size: 22px;
+  }
+  
+  .example-1 .icon-content {
+    margin: 0 4px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .example-1 .icon-content .link svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .kurslar, .about, .qushimcha {
+    max-width: 250px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 17px;
+  }
+  
+  .about a:first-child {
+    font-size: 17px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 13px;
+  }
+  
+  footer .between:last-child {
+    font-size: 11px;
+  }
+}
+
+/* ------------------------------
+   LANDSCAPE MODE
+   ------------------------------ */
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  footer .between:first-child {
+    justify-content: space-around;
+  }
+  
+  .kurslar, .about, .qushimcha {
+    width: calc(33.33% - 20px);
+    max-width: none;
+  }
+  
+  .example-1 {
+    justify-content: center;
+  }
+}
+
+/* ------------------------------
+   HOVER EFFECTS
+   ------------------------------ */
+@media (hover: hover) {
+  .kurslar p:hover, 
+  .about a:hover, 
+  .qushimcha p:hover {
+    color: #00e5ff;
+    transform: translateX(5px);
+  }
+  
+  .example-1 .icon-content .link:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* ------------------------------
+   BOTTOM FOOTER (Copyright qismi)
+   ------------------------------ */
+footer .between:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* WRAP */
+  gap: 20px;
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  color: #99a1af;
+  font-size: 14px;
+}
+
+footer .between:last-child .love {
+  color: #00e5ff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .between:last-child .love::before {
+  content: '❤️';
+  font-size: 14px;
+}
+
+/* ------------------------------
+   RESPONSIVE BREAKDOWN VISUAL
+   ------------------------------ */
+/*
+  WRAP qanday ishlaydi:
+  
+  1200px+ : 4 kolonka (social + 3 ta)
+  992px   : 3 kolonka (kurslar, about, qushimcha yonma-yon)
+  768px   : 2 kolonka (kurslar va about bir qatorda, qushimcha keyingi qatorda)
+  480px   : 1 kolonka (hammasi vertikal)
+*//* ============================================
+   FOOTER RESPONSIVE STYLES - WRAP BILAN
+   ============================================ */
+
+/* Footer asosiy stillari */
+footer {
+  background: #060a10;
+  width: 100%;
+  font-family: MyFont, sans-serif;
+  padding: 60px 0 30px;
+  margin-top: 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+footer .between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;  /* WRAP - elementlar o'raladi */
+  gap: 40px;        /* Oraliq masofa */
+}
+
+/* ------------------------------
+   LARGE DEVICES (1200px gacha)
+   ------------------------------ */
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 50px 0 25px;
+  }
+  
+  footer .between:first-child {
+    gap: 35px;
+  }
+  
+  .sociallar {
+    width: 100%;  /* To'liq en */
+  }
+  
+  .kurslar, .about, .qushimcha {
+    width: calc(33.33% - 25px);  /* 3 kolonka */
+    min-width: 180px;
+  }
+}
+
+/* ------------------------------
+   MEDIUM DEVICES (992px gacha)
+   ------------------------------ */
+@media screen and (max-width: 992px) {
+  footer {
+    margin-top: 80px;
+  }
+  
+  footer .between:first-child {
+    gap: 30px;
+    justify-content: flex-start;  /* Chapdan boshlab */
+  }
+  
+  .sociallar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sociallar .text {
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  .kurslar, .about, .qushimcha {
+    width: calc(33.33% - 20px);
+    min-width: 160px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 18px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 14px;
+  }
+  
+  /* Bottom footer */
+  footer .between:last-child {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+}
+
+/* ------------------------------
+   SMALL DEVICES (768px gacha)
+   ------------------------------ */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 40px 0 20px;
+    margin-top: 60px;
+  }
+  
+  footer .between:first-child {
+    gap: 30px;
+    justify-content: center;  /* Markazga */
+  }
+  
+  /* Social section */
+  .sociallar {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sociallar .text {
+    font-size: 28px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  
+  .sociallar .text h1,
+  .sociallar .text p {
+    display: inline-block;
+  }
+  
+  /* Social icons */
+  .example-1 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .example-1 .icon-content {
+    margin: 0 8px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 45px;
+    height: 45px;
+  }
+  
+  /* Footer columns - WRAP ishlaydi */
+  .kurslar, .about, .qushimcha {
+    width: calc(50% - 20px);  /* 2 kolonka */
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #00e5ff;
+  }
+  
+  .about a:first-child {
+    color: #00e5ff;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #99a1af;
+  }
+  
+  .about a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .about br {
+    display: none;  /* <br> larni yashiramiz */
+  }
+  
+  /* Bottom footer */
+  footer .between:last-child {
+    flex-direction: row;  /* Yonma-yon */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  footer .between:last-child div {
+    width: auto;  /* Avtomatik en */
+  }
+  
+  .love {
+    color: #00e5ff;
+  }
+}
+
+/* ------------------------------
+   EXTRA SMALL DEVICES (576px gacha)
+   ------------------------------ */
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 30px 0 15px;
+  }
+  
+  footer .between:first-child {
+    gap: 25px;
+  }
+  
+  .sociallar .text {
+    font-size: 26px;
+  }
+  
+  /* Social icons */
+  .example-1 .icon-content {
+    margin: 0 5px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .example-1 .icon-content .link svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  /* Footer columns - 2 ta yoki 1 ta */
+  .kurslar, .about, .qushimcha {
+    width: calc(50% - 15px);  /* 2 kolonka */
+    min-width: 150px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 17px;
+  }
+  
+  .about a:first-child {
+    font-size: 17px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 13px;
+    margin: 6px 0;
+  }
+  
+  /* Bottom footer */
+  footer .between:last-child {
+    font-size: 12px;
+    gap: 10px;
+  }
+}
+
+/* ------------------------------
+   VERY SMALL DEVICES (480px gacha)
+   ------------------------------ */
+@media screen and (max-width: 480px) {
+  footer .between:first-child {
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Footer columns - 1 ta kolonka */
+  .kurslar, .about, .qushimcha {
+    width: 100%;  /* To'liq en - 1 kolonka */
+    max-width: 280px;
+    text-align: center;
+  }
+  
+  .sociallar .text {
+    font-size: 24px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .about a:first-child {
+    font-size: 18px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  /* Bottom footer */
+  footer .between:last-child {
+    flex-direction: column;  /* Vertikal */
+    gap: 8px;
+    font-size: 12px;
+  }
+}
+
+/* ------------------------------
+   VERY VERY SMALL DEVICES (400px gacha)
+   ------------------------------ */
+@media screen and (max-width: 400px) {
+  footer {
+    padding: 25px 0 15px;
+  }
+  
+  .sociallar .text {
+    font-size: 22px;
+  }
+  
+  .example-1 .icon-content {
+    margin: 0 4px;
+  }
+  
+  .example-1 .icon-content .link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .example-1 .icon-content .link svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .kurslar, .about, .qushimcha {
+    max-width: 250px;
+  }
+  
+  .kurslar h1, .qushimcha h1 {
+    font-size: 17px;
+  }
+  
+  .about a:first-child {
+    font-size: 17px;
+  }
+  
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 13px;
+  }
+  
+  footer .between:last-child {
+    font-size: 11px;
+  }
+}
+
+/* ------------------------------
+   LANDSCAPE MODE
+   ------------------------------ */
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  footer .between:first-child {
+    justify-content: space-around;
+  }
+  
+  .kurslar, .about, .qushimcha {
+    width: calc(33.33% - 20px);
+    max-width: none;
+  }
+  
+  .example-1 {
+    justify-content: center;
+  }
+}
+
+/* ------------------------------
+   HOVER EFFECTS
+   ------------------------------ */
+@media (hover: hover) {
+  .kurslar p:hover, 
+  .about a:hover, 
+  .qushimcha p:hover {
+    color: #00e5ff;
+    transform: translateX(5px);
+  }
+  
+  .example-1 .icon-content .link:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* ------------------------------
+   BOTTOM FOOTER (Copyright qismi)
+   ------------------------------ */
+footer .between:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* WRAP */
+  gap: 20px;
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  color: #99a1af;
+  font-size: 14px;
+}
+
+footer .between:last-child .love {
+  color: #00e5ff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .between:last-child .love::before {
+  content: ')';
+  font-size: 14px;
+}
+
+/* ------------------------------
+   RESPONSIVE BREAKDOWN VISUAL
+   ------------------------------ */
+/*
+  WRAP qanday ishlaydi:
+  
+  1200px+ : 4 kolonka (social + 3 ta)
+  992px   : 3 kolonka (kurslar, about, qushimcha yonma-yon)
+  768px   : 2 kolonka (kurslar va about bir qatorda, qushimcha keyingi qatorda)
+  480px   : 1 kolonka (hammasi vertikal)
+*//* ============================================
+   SMARTPHONE RWD (300px - 440px)
+   Barcha komponentlar uchun optimallashtirilgan
+   ============================================ */
+
+/* ------------------------------
+   400px dan 440px gacha
+   ------------------------------ */
+@media screen and (min-width: 401px) and (max-width: 440px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    padding: 12px 10px !important;
+    gap: 10px;
+  }
+
+  header .logo {
+    font-size: 24px !important;
+  }
+
+  header .links {
+    gap: 8px 10px !important;
+    justify-content: center;
+  }
+
+  header .links a {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+
+  header .sign button {
+    min-width: 120px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  /* ===== HERO SECTION ===== */
+  nav {
+    margin-top: 90px !important;
+  }
+
+  .left h1 {
+    font-size: 32px !important;
+    line-height: 1.3;
+  }
+
+  .left p {
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0 8px;
+    margin: 12px 0;
+  }
+
+  .wrap-anywhere {
+    gap: 8px !important;
+  }
+
+  .wrap-anywhere button {
+    max-width: 260px;
+    padding: 10px !important;
+    font-size: 14px !important;
+  }
+
+  /* Developer Card */
+  .code-window.nonwidther {
+    max-width: 360px;
+  }
+
+  .code-body {
+    padding: 16px;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .floating-badge {
+    padding: 8px 12px;
+    bottom: -20px;
+    left: -10px;
+  }
+
+  .floating-badge .badge-icon {
+    font-size: 18px;
+  }
+
+  /* ===== SECTION TITLES ===== */
+  .center h1 {
+    font-size: 28px !important;
+    line-height: 1.3;
+  }
+
+  .center p {
+    font-size: 13px;
+    padding: 0 15px;
+  }
+
+  /* ===== CARDS ===== */
+  .section {
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .section > div {
+    max-width: 340px;
+  }
+
+  .windcode {
+    max-width: 340px;
+  }
+
+  .code-window .window-bar {
+    padding: 10px 14px;
+  }
+
+  .win-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .win-title {
+    font-size: 10px;
+  }
+
+  /* ===== SLIDER ===== */
+  .card-wrapper {
+    margin: 0 5px 20px !important;
+    padding: 5px 0;
+  }
+
+  .card-item {
+    min-height: 500px;
+  }
+
+  .card-link {
+    min-height: 500px;
+    padding: 12px;
+  }
+
+  .badge {
+    font-size: 20px !important;
+    margin: 10px 0 12px;
+    padding: 5px 10px;
+  }
+
+  .card-title {
+    font-size: 12px !important;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .card-image {
+    border-radius: 8px;
+  }
+
+  .card-button {
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 0 3px !important;
+  }
+
+  /* ===== LOGIN SECTION ===== */
+  .login-ui {
+    padding: 20px 0;
+  }
+
+  .login-ui .login-container {
+    padding: 10px 8px;
+    gap: 15px;
+  }
+
+  .login-ui .brand-title {
+    font-size: 32px !important;
+    line-height: 1.2;
+  }
+
+  .login-ui .brand-text {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .login-ui .login-form-wrap {
+    padding: 18px 14px;
+    border-radius: 16px;
+  }
+
+  .login-ui .window-bar {
+    padding: 8px 12px;
+    margin-bottom: 12px !important;
+  }
+
+  .win-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .win-title {
+    font-size: 10px;
+  }
+
+  .login-ui .form-header {
+    margin-top: 5px;
+  }
+
+  .login-ui .form-header h2 {
+    font-size: 22px;
+  }
+
+  .login-ui .form-header p {
+    font-size: 12px;
+  }
+
+  .login-ui .input-field {
+    margin-top: 16px;
+  }
+
+  .login-ui .input-field input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .login-ui .input-field label {
+    font-size: 10px;
+    top: -8px;
+    padding: 0 4px;
+  }
+
+  .form-group {
+    margin-top: 12px;
+  }
+
+  .form-group label {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  .form-group textarea {
+    min-height: 80px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .form-extras {
+    margin-top: 8px;
+    gap: 8px;
+  }
+
+  .checkbox {
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  .checkbox input {
+    width: 14px;
+    height: 14px;
+  }
+
+  .forgot-link {
+    font-size: 11px;
+  }
+
+  .login-ui .login-btn {
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .social-buttons {
+    margin-top: 12px;
+    gap: 6px;
+  }
+
+  .login-ui .social-btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  /* Floating shapes */
+  .login-ui .shape {
+    width: 60px;
+    height: 60px;
+    filter: blur(20px);
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    padding: 30px 15px 15px !important;
+    margin-top: 40px;
+  }
+
+  footer .between:first-child {
+    gap: 25px;
+  }
+
+  .sociallar .text {
+    font-size: 24px;
+  }
+
+  .sociallar .text h1,
+  .sociallar .text p {
+    font-size: 24px !important;
+  }
+
+  /* Social icons */
+  .example-1 .icon-content {
+    margin: 0 6px;
+  }
+
+  .example-1 .icon-content .link {
+    width: 38px;
+    height: 38px;
+  }
+
+  .example-1 .icon-content .link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .example-1 .icon-content .tooltip {
+    font-size: 10px;
+    padding: 3px 6px;
+    top: -25px;
+  }
+
+  /* Footer columns */
+  .kurslar, .about, .qushimcha {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .kurslar h1, .qushimcha h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .about a:first-child {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 13px;
+    margin: 6px 0;
+  }
+
+  /* Bottom footer */
+  footer .between:last-child {
+    margin-top: 25px;
+    padding-top: 15px;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  footer .between:last-child .love::before {
+    font-size: 11px;
+  }
+}
+
+/* ------------------------------
+   361px dan 400px gacha
+   ------------------------------ */
+@media screen and (min-width: 361px) and (max-width: 400px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+
+  /* Header */
+  header .logo {
+    font-size: 22px !important;
+  }
+
+  header .links {
+    gap: 5px 8px !important;
+  }
+
+  header .links a {
+    font-size: 12px;
+    padding: 4px 5px;
+  }
+
+  header .sign button {
+    min-width: 110px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  /* Hero */
+  .left h1 {
+    font-size: 28px !important;
+  }
+
+  .left p {
+    font-size: 12px;
+  }
+
+  .wrap-anywhere button {
+    max-width: 240px;
+  }
+
+  /* Cards */
+  .section > div {
+    max-width: 320px;
+  }
+
+  .windcode {
+    max-width: 320px;
+  }
+
+  .code-body {
+    padding: 14px;
+    font-size: 10px;
+  }
+
+  /* Slider */
+  .badge {
+    font-size: 18px !important;
+  }
+
+  .card-title {
+    font-size: 11px !important;
+  }
+
+  .card-item {
+    min-height: 480px;
+  }
+
+  /* Login */
+  .login-ui .brand-title {
+    font-size: 28px !important;
+  }
+
+  .login-ui .login-form-wrap {
+    padding: 15px 12px;
+  }
+
+  .login-ui .form-header h2 {
+    font-size: 20px;
+  }
+
+  .login-ui .input-field input {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .form-group textarea {
+    min-height: 70px;
+    padding: 8px;
+  }
+
+  /* Footer */
+  .sociallar .text {
+    font-size: 22px;
+  }
+
+  .example-1 .icon-content .link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .example-1 .icon-content .link svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .kurslar, .about, .qushimcha {
+    max-width: 260px;
+  }
+
+  .kurslar h1, .qushimcha h1 {
+    font-size: 17px;
+  }
+
+  .about a:first-child {
+    font-size: 17px;
+  }
+
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 12px;
+  }
+}
+
+/* ------------------------------
+   300px dan 360px gacha (ENG KICHIK)
+   ------------------------------ */
+@media screen and (max-width: 360px) {
+  .container {
+    width: calc(100% - 16px);
+  }
+
+  /* Header */
+  header {
+    padding: 10px 8px !important;
+  }
+
+  header .logo {
+    font-size: 20px !important;
+  }
+
+  header .links {
+    gap: 4px 6px !important;
+  }
+
+  header .links a {
+    font-size: 11px;
+    padding: 3px 4px;
+  }
+
+  header .sign button {
+    min-width: 100px;
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  /* Hero */
+  .left h1 {
+    font-size: 24px !important;
+  }
+
+  .left p {
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 0 5px;
+  }
+
+  .wrap-anywhere button {
+    max-width: 220px;
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+
+  /* Developer Card */
+  .code-window.nonwidther {
+    max-width: 300px;
+  }
+
+  .code-body {
+    padding: 12px;
+    font-size: 9px;
+    line-height: 1.4;
+  }
+
+  .floating-badge {
+    padding: 6px 10px;
+    bottom: -15px;
+    left: -5px;
+  }
+
+  .floating-badge div:first-child {
+    font-size: 12px !important;
+  }
+
+  .floating-badge div:last-child {
+    font-size: 10px !important;
+  }
+
+  /* Section titles */
+  .center h1 {
+    font-size: 24px !important;
+  }
+
+  .center p {
+    font-size: 11px;
+    padding: 0 10px;
+  }
+
+  /* Cards */
+  .section > div {
+    max-width: 280px;
+  }
+
+  .windcode {
+    max-width: 280px;
+  }
+
+  .code-window .window-bar {
+    padding: 8px 12px;
+  }
+
+  .win-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .win-title {
+    font-size: 9px;
+  }
+
+  /* Slider */
+  .card-item {
+    min-height: 450px;
+  }
+
+  .card-link {
+    min-height: 450px;
+    padding: 10px;
+  }
+
+  .badge {
+    font-size: 16px !important;
+    margin: 8px 0 10px;
+  }
+
+  .card-title {
+    font-size: 10px !important;
+    line-height: 1.4;
+  }
+
+  .card-button {
+    width: 28px;
+    height: 28px;
+    margin: 12px 0 0;
+  }
+
+  .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Login */
+  .login-ui {
+    padding: 15px 0;
+  }
+
+  .login-ui .login-container {
+    padding: 5px 5px;
+    gap: 10px;
+  }
+
+  .login-ui .brand-title {
+    font-size: 24px !important;
+  }
+
+  .login-ui .brand-text {
+    font-size: 11px;
+  }
+
+  .brand-dots .dot {
+    width: 5px;
+    height: 5px;
+    margin: 0 2px;
+  }
+
+  .login-ui .login-form-wrap {
+    padding: 12px 10px;
+  }
+
+  .login-ui .window-bar {
+    padding: 6px 10px;
+    margin-bottom: 10px !important;
+  }
+
+  .win-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .win-title {
+    font-size: 8px;
+  }
+
+  .login-ui .form-header h2 {
+    font-size: 18px;
+  }
+
+  .login-ui .form-header p {
+    font-size: 10px;
+  }
+
+  .login-ui .input-field {
+    margin-top: 14px;
+  }
+
+  .login-ui .input-field input {
+    padding: 7px 8px;
+    font-size: 11px;
+  }
+
+  .login-ui .input-field label {
+    font-size: 9px;
+    top: -7px;
+  }
+
+  .form-group label {
+    font-size: 10px;
+  }
+
+  .form-group textarea {
+    min-height: 60px;
+    padding: 7px;
+    font-size: 11px;
+  }
+
+  .checkbox {
+    font-size: 10px;
+  }
+
+  .checkbox input {
+    width: 12px;
+    height: 12px;
+  }
+
+  .forgot-link {
+    font-size: 10px;
+  }
+
+  .login-ui .login-btn {
+    padding: 8px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .login-ui .social-btn {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 25px 10px 10px !important;
+    margin-top: 30px;
+  }
+
+  .sociallar .text {
+    font-size: 20px;
+  }
+
+  .sociallar .text h1,
+  .sociallar .text p {
+    font-size: 20px !important;
+  }
+
+  .example-1 .icon-content {
+    margin: 0 4px;
+  }
+
+  .example-1 .icon-content .link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .example-1 .icon-content .link svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .kurslar, .about, .qushimcha {
+    max-width: 240px;
+  }
+
+  .kurslar h1, .qushimcha h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .about a:first-child {
+    font-size: 16px;
+  }
+
+  .kurslar p, .about a, .qushimcha p {
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  footer .between:last-child {
+    font-size: 10px;
+    gap: 5px;
+    margin-top: 20px;
+    padding-top: 12px;
+  }
+
+  footer .between:last-child .love::before {
+    font-size: 10px;
+  }
+
+  .love {
+    font-size: 10px;
+  }
+}
+
+/* ------------------------------
+   UTILITY CLASSES (barcha smartphone)
+   ------------------------------ */
+@media screen and (max-width: 440px) {
+  .mt-8 {
+    margin-top: 20px !important;
+  }
+
+  .gap-3 {
+    gap: 8px !important;
+  }
+
+  .text-center-xs {
+    text-align: center;
+  }
+
+  .w-full-xs {
+    width: 100%;
+  }
+
+  .px-2-xs {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .hide-on-xs {
+    display: none;
+  }
+
+  .show-on-xs {
+    display: block;
+  }
+
+  /* Font sizes */
+  .text-4xl {
+    font-size: 28px !important;
+  }
+
+  .text-3xl {
+    font-size: 24px !important;
+  }
+
+  .text-2xl {
+    font-size: 20px !important;
+  }
+
+  .text-xl {
+    font-size: 18px !important;
+  }
+
+  .text-lg {
+    font-size: 16px !important;
+  }
+
+  .text-base {
+    font-size: 14px !important;
+  }
+
+  .text-sm {
+    font-size: 12px !important;
+  }
+
+  .text-xs {
+    font-size: 11px !important;
+  }
+
+  /* Spacing */
+  .mt-4 {
+    margin-top: 15px !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 15px !important;
+  }
+
+  .mt-6 {
+    margin-top: 20px !important;
+  }
+
+  .mb-6 {
+    margin-bottom: 20px !important;
+  }
+
+  .p-4 {
+    padding: 15px !important;
+  }
+
+  /* Container adjustments */
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Hide elements that take too much space */
+  .floating-shapes .shape {
+    opacity: 0.3;
+  }
+
+  /* Better touch targets */
+  button, 
+  a, 
+  .link, 
+  [role="button"] {
+    min-height: 36px;
+    min-width: 36px;
+  }
+
+  /* Improve readability */
+  p, 
+  span, 
+  a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Prevent overflow */
+  img, 
+  svg, 
+  video, 
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}

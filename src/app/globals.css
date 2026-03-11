@@ -1,5 +1,90 @@
 @import "tailwindcss";
+@import "./components/ui/buttons.css";
+@font-face {
+  font-family: "MyFont";
+  src: url("/src/app/fonts/SpaceGrotesk-Medium.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "MyFont";
+  src: url("fonts/SpaceGrotesk-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+body{
+  background-color:  #060a10;
+  color: white;
+
+}
+
+.container{
+    width: calc(100% - 161px);
+    height: 100%;
+    margin: 0 auto;
+  }
+  a{
+    text-decoration-style: none;
+    color: #e8edf5;
+  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  backdrop-filter: blur(10px);
+padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+display: grid;
+gap: 20px 230px;
+  
+margin-top: 100px;
+}
+.left h1{
+  font-family: MyFont,sans-serif;
+  font-weight: 700;
+  font-size: 67px;
+}
+.widther{
+
+  width: 60%;
+  
+}
+.textss{
+  color: #00e5ff;
+}
+
+.section{
+display: flex;
+justify-content: space-around;
+align-content: center;
+margin-top: 80px;
+}
+.center h1{
+  font-family: MyFont,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+footer{
+  margin-top: 100px;
+  font-family: MyFont;
+  
+  font-weight: 600;
+}
+.text h1,p{
+  font-family: MyFont;
+  font-weight: 700;
+}
+.forcolor{
+  color: #99a1af;
+}

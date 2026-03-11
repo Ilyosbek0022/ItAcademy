@@ -1,0 +1,125 @@
+/* style was taken idk from claude or just codepen */
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* code window */
+.code-window {
+  width: 100%;
+  max-width: 300px;
+  background: #0d1420;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+  animation: float 6s ease-in-out infinite;
+}
+
+.windcode{
+  width: 250px;
+
+  max-width: 300px;
+}
+@keyframes float {
+  0%,100% {transform: translateY(0)}
+  50% {transform: translateY(-14px)}
+}
+
+/* window top */
+.window-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  background: #131d2e;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.nonwidther{
+  width: 400px;
+  max-width: 480px;
+}
+.win-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.win-dot.r { background: #ff6b6b; }
+.win-dot.y { background: #ffd93d; }
+.win-dot.g { background: #6bcb77; }
+
+.win-title {
+  margin-left: auto;
+  font-size: 12px;
+  color: #6b7a96;
+  font-family: monospace;
+}
+
+/* code body */
+.code-body {
+  padding: 24px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* syntax colors */
+.c-keyword { color: #7c5cfc; }
+.c-fn { color: #00e5ff; }
+.c-string { color: #6bcb77; }
+.c-comment { color: #6b7a96; }
+.c-var { color: #ffd93d; }
+.c-punct { color: #6b7a96; }
+
+/* cursor */
+.cursor-blink {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #00e5ff;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,100% {opacity:1}
+  50% {opacity:0}
+}
+
+/* floating badges */
+.floating-badge {
+  position: absolute;
+  background: #0d1420;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.badge-top {
+  top: -30px;
+  right: -30px;
+}
+
+.badge-bot {
+  bottom: -30px;
+  left: -30px;
+}
+
+.badge-icon {
+  font-size: 22px;
+}
+@media screen and (max-width:840px){
+.hero-visual{
+    display: none;
+}
+}

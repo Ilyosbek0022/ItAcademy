@@ -1,0 +1,159 @@
+/* wrapper */
+.login-ui {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* floating shapes */
+.login-ui .floating-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.login-ui .shape {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(0,229,255,0.1);
+  filter: blur(40px);
+}
+
+.login-ui .shape-1 { top: 10%; left: 10%; }
+.login-ui .shape-2 { top: 70%; left: 20%; }
+.login-ui .shape-3 { top: 20%; right: 15%; }
+.login-ui .shape-4 { bottom: 10%; right: 10%; }
+
+/* login container */
+
+.login-ui .login-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  gap:40px;
+}
+
+/* brand side */
+
+.login-ui .login-brand{
+  max-width:420px;
+}
+
+.login-ui .brand-title{
+  font-size:56px;
+  font-weight:700;
+  line-height:1.1;
+}
+
+.login-ui .brand-title span{
+  color:#00e5ff;
+}
+
+.login-ui .brand-text{
+  margin-top:20px;
+  opacity:.7;
+}
+
+/* form */
+
+.login-ui .login-form-wrap{
+  background:#0b0f17;
+  padding:40px;
+  border-radius:14px;
+  width: 600px;
+  max-width: 700px;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+/* input */
+
+.login-ui .input-field{
+  position:relative;
+  margin-top:25px;
+}
+
+.login-ui .input-field input{
+  width:100%;
+  padding:14px;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:8px;
+  color:white;
+}
+
+.login-ui .input-field label{
+  position:absolute;
+  top:-10px;
+  left:10px;
+  font-size:12px;
+  background:#0b0f17;
+  padding:0 6px;
+}
+
+/* login button */
+
+.login-ui .login-btn{
+  margin-top:30px;
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  background:#00e5ff;
+  color:black;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.login-ui .login-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* social */
+
+.login-ui .social-buttons{
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+}
+
+.login-ui .social-btn{
+  flex:1;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid rgba(255,255,255,0.1);
+  background:transparent;
+  color:white;
+}
+.form-header{
+    margin-top: 30px;
+}
+/* code of the message one was taken from claude ai */.form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .form-group label { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
+
+  .form-group input,
+  .form-group textarea {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 13px 16px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(0,229,255,0.08);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: var(--muted); }
+
+  .form-group textarea { resize: vertical; min-height: 120px; }
+/* !dsdlashddasjdsahd */
