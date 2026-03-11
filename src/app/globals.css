@@ -14,7 +14,7 @@
 @font-face {
   font-family: "MyFont";
   src: url("/public/fonts/SpaceGrotesk-Bold.ttf") format("woff2");
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -45,10 +45,14 @@ header {
   align-items: center;
   position: static;
   backdrop-filter: blur(10px);
+  
   padding: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
+.links{
+  gap: 20px;
+}
 nav {
   display: grid; /* display flex olib tashladim */
   justify-content: space-between;

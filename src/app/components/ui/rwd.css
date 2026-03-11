@@ -1,13 +1,5 @@
-/* ============================================
-   RESPONSIVE WEB DESIGN (RWD) - LANDING PAGE
-   Barcha komponentlar uchun moslashuvchanlik
-   ============================================ */
 
-/* ------------------------------
-   GLOBAL SETTINGS
-   ------------------------------ */
 
-/* Extra large devices (1400px dan katta) */
 @media screen and (max-width: 1400px) {
   .container {
     width: calc(100% - 161px);
