@@ -31,6 +31,7 @@ body {
 .container {
   width: calc(100% - 161px);
   height: 100%;
+  
   margin: 0 auto;
 }
 
@@ -103,4 +104,9 @@ p {
 
 .forcolor {
   color: #99a1af;
+
+}
+
+div{
+color: #00e5ff;
 }

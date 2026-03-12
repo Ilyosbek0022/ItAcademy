@@ -34,7 +34,7 @@
 /* Medium devices (992px gacha) */
 @media screen and (max-width: 992px) {
   .container {
-    width: calc(100% - 60px);
+    width: 100%;
   }
   
   /* ===== HEADER ===== */
@@ -154,6 +154,9 @@
   .login-ui .brand-title {
     font-size: 48px !important;
   }
+  .right{
+    display: none;
+  }
 }
 
 /* Small devices (768px gacha) */
@@ -168,23 +171,23 @@
   
   /* ===== HEADER ===== */
   header {
-    flex-direction: column;
+    
     align-items: center !important;
     gap: 15px;
-    padding: 15px !important;
+    
   }
   
   header .links {
     order: 2;
-    width: 100%;
+  
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px 15px !important;
+    
+    
   }
   
   header .sign {
     order: 3;
-    width: 100%;
+    
     display: flex;
     justify-content: center;
   }
@@ -2484,11 +2487,19 @@ footer .between:last-child .love::before {
 /* ------------------------------
    UTILITY CLASSES (barcha smartphone)
    ------------------------------ */
+   @media screen and (max-width: 600px) {
+    .container{
+width: 100%;
+
+    }}
 @media screen and (max-width: 440px) {
   .mt-8 {
     margin-top: 20px !important;
   }
-
+.container{
+  
+  width: 100%;
+}
   .gap-3 {
     gap: 8px !important;
   }
